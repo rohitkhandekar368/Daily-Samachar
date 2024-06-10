@@ -1,13 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+import loading from "./loading.gif";
 
-export default class Spinner extends Component {
-  render() {
-    return (
-      <>
-        <div className="d-flex justify-content-center">
-          <div className="spinner-border" role="status"></div>
-        </div>
-      </>
-    );
-  }
-}
+const Spinner = () => {
+  return (
+    <div className="text-center" style={{ height: "100vh" }}>
+      <img className="my-3" src={loading} alt="loading" />
+    </div>
+  );
+};
+
+export default Spinner;
